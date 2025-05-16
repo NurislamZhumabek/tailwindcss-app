@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Weather from '../pages/Weather';
-import Movies from '../pages/Movies';
-import Books from '../pages/Books';
-import Countries from '../pages/Countries';
+import Navbar from './Navbar';
+import Weather from './Weather';
+import Movies from './Movies';
+import Books from './Books';
+import Countries from './Countries';
+import Genimi from './Genimi';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/books" element={<Books />} />
           <Route path="/countries" element={<Countries />} />
+          <Route path="/genimi" element={ <Genimi/> } />
         </Routes>
       </div>
     </Router>
-  );
+  );  
 }
 
 export default App;
